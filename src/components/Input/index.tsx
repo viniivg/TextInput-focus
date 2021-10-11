@@ -3,7 +3,6 @@ import React, { ReactElement } from "react";
 import { Container, TextInput } from './styles'
 
 interface propsInpuit{
-    width?: string
     icon: ReactElement | false
     placeholder: string
     secureTextEntry?: boolean
@@ -16,7 +15,6 @@ interface propsInpuit{
 }
 
 const App: React.FC<propsInpuit> = ({ 
-    width,
     icon,
     placeholder,
     inputRef,
@@ -36,6 +34,7 @@ const App: React.FC<propsInpuit> = ({
               onSubmitEditing={onSubmitEditing}
               returnKeyType={returnKeyType}
               keyboardType={keyboardType}
+              onChangeText={onChangeText}
               autoCorrect={false}
               autoCapitalize='none'
             />

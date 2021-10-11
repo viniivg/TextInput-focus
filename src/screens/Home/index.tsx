@@ -23,7 +23,7 @@ const App = () => {
                 <Input
                     placeholder='Email'
                     keyboardType='email-address'
-                    onChangeText={(text) => { }}
+                    onChangeText={(text: string) => { }}
                     icon={<IconUser fill='#616161' width={16} height={16} />}
                     returnKeyType="next"
                     onSubmitEditing={() => passwordRef.current.focus()} />
@@ -32,7 +32,7 @@ const App = () => {
                     inputRef={passwordRef}
                     placeholder='Senha'
                     secureTextEntry
-                    onChangeText={(text) => { }}
+                    onChangeText={(text: string) => { }}
                     returnKeyType="done"
                     onSubmitEditing={() => console.log('Chamando api de login')}
                     icon={<IconPassword fill='#616161' width={16} height={16} />} />
